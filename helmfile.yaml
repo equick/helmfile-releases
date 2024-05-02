@@ -1,0 +1,10 @@
+helmDefaults:
+  createNamespace: true
+
+repositories:
+- name: release-charts
+  url: 101010101.dkr.ecr.eu-west-1.amazonaws.com/scanned/release/helm-charts
+  oci: true
+
+helmfiles:
+- myapp.yaml
